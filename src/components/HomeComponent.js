@@ -6,7 +6,7 @@ import { Card, CardImg, CardText, CardBody,
 
 
   function RenderCard({item ,isLoading,errMess}) {
-
+              
     if (isLoading) {
         return(
                 <Loading />
@@ -18,7 +18,6 @@ import { Card, CardImg, CardText, CardBody,
         );
     }
     else 
-    //if(item!=null)
         return(
             <Card>
                 <CardImg src={baseUrl + item.image} alt={item.name} />
